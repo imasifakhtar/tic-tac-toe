@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meata charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Tic Tac Toe</title>
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  
+  <body>
+    <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="grid">
+          <div class="box bt-0 bl-0"><span class="boxText"></span></div>
+          <div class="box bt-0"><span class="boxText"></span></div>
+          <div class="box bt-0 br-0"><span class="boxText"></span></div>
+          <div class="box bl-0"><span class="boxText"></span></div>
+          <div class="box"><span class="boxText"></span></div>
+          <div class="box br-0"><span class="boxText"></span></div>
+          <div class="box bl-0 bb-0"><span class="boxText"></span></div>
+          <div class="box bb-0"><span class="boxText"></span></div>
+          <div class="box bb-0 br-0"><span class="boxText"></span></div>
+        </div>
+      </div>
+    
+      <div class="info">
+        <div>
+          <div class="btn">
+            <span>Current Turn : <span class="player">X</span></span>
+          </div>
+          <div id="status"></div>
+        </div>
+        <div id="btn"><span class="reset">Restart</><div id="circle"></div></div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+  </html>

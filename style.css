@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mail", cursive;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+  align-items: center;
+}
+
+h1 {
+  margin: 20px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 5px 10px 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+}
+
+.box {
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgba(238, 238, 238, 0.11);
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.boxText {
+  font-size: 38px;
+  font-weight: bold;
+  color: red;
+}
+
+.info {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  color: white;
+  align-items: center;
+}
+
+.info span {
+  font-size: 22px;
+}
+
+.player {
+  color: red;
+  font-weight: bold;
+}
+
+#btn {
+  background: #222;
+  height: 50px;
+  min-width: 120px;
+  border-radius: 10px;
+  color: #eee;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 600ms;
+}
+
+#btn:hover {
+  background: transparent;
+  color: red;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 120px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid red;
+}
+
+#status {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
